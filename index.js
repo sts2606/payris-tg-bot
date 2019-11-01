@@ -52,8 +52,8 @@ bot.on("message", (msg) => {
             ]
         }
     })
-    // bot.forwardMessage(346092562, msg.from.id, msg.message_id)
-        bot.forwardMessage(608932241, msg.from.id, msg.message_id)
+    bot.forwardMessage(346092562, msg.from.id, msg.message_id)
+        // bot.forwardMessage(608932241, msg.from.id, msg.message_id)
     console.log(msg.from.id + msg.from.username);
     }
 })
