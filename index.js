@@ -1,9 +1,9 @@
 const PayrisBot = require('node-telegram-bot-api');
 const TOKEN = require('./config');
 
-require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
+setInterval(require('http').createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
     res.end('')
-})
+}), 1500000)
 
 const bot = new PayrisBot(TOKEN, {
     polling: true
